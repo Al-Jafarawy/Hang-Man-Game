@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hang Man Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-info">
+        <div class="game-name">Hang Man</div>
+        <div class="category">Word From: <span></span></div>
+        <button id="theme-toggle" title="Toggle Light/Dark Mode">🌙</button>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="hangman-draw">
+          <div class="draw-container">
+            <div class="the-draw">
+              <div class="the-stand"></div>
+              <div class="the-hang"></div>
+              <div class="the-rope"></div>
+              <div class="the-man">
+                <div class="head">˘･_･˘</div>
+                <div class="body"></div>
+                <div class="hands"></div>
+                <div class="legs"></div>
+              </div>
+            </div>
+          </div>
+          <div class="letters"></div>
+        </div>
+      </div>
+      <hr />
+      <div class="letter-guess"></div>
+    </div>
+    <audio id="fail" src="audio/fail.mp3" preload="auto"></audio>
+    <audio id="succes" src="audio/succes.mp3" preload="auto"></audio>
+    <div class="popup" id="popup">
+      <div id="popup-text"></div>
+      <button id="play-again" style="display: none">Play Again</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
